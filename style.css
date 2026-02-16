@@ -25,7 +25,8 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       135deg,
       rgba(0, 153, 219, 0.9) 0%,
       rgba(0, 104, 181, 0.9) 50%,
@@ -346,6 +347,91 @@ select {
   font-size: 15px;
   font-weight: 500;
   color: #475569;
+}
+
+/* Attendee list */
+.attendee-list {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.attendee-list h4 {
+  margin-bottom: 12px;
+  color: #475569;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.attendee-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+  max-height: 240px;
+  overflow: auto;
+}
+
+.attendee-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #f1f5f9;
+  box-shadow: 0 2px 8px rgba(2, 6, 23, 0.03);
+}
+
+.attendee-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+
+.attendee-avatar.water {
+  background: #0071c5;
+}
+
+.attendee-avatar.zero {
+  background: #10b981;
+}
+
+.attendee-avatar.power {
+  background: #f59e0b;
+  color: #3a2700;
+}
+
+.attendee-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.attendee-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.attendee-team {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.attendee-items .empty {
+  color: #94a3b8;
+  padding: 8px 12px;
+  background: #fafafa;
+  border-radius: 8px;
+  border: 1px dashed #e6edf3;
+  text-align: center;
 }
 
 /* Mobile responsive */
